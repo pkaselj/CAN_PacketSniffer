@@ -46,3 +46,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     resources/icon.ico \
     resources/icon.png
+
+RC_ICONS = resources/icon.ico

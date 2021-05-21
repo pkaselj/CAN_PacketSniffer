@@ -23,7 +23,9 @@ MainView::MainView(QApplication* pMainApplication, QWidget *parent)
 
     // setWindowFlags(Qt::MSWindowsFixedSizeDialogHint);
 
-    m_pSerialReader->Start();
+
+    // DEBUG ONLY
+    // m_pSerialReader->Start();
 }
 
 MainView::~MainView()

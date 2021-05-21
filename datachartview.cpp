@@ -69,7 +69,7 @@ void DataChartView::Update()
 {
     m_pChart->axisX()->setRange(m_pDataSeries->at(0).x(), m_pDataSeries->at(m_pDataSeries->count() - 1).x());
     auto points = m_pDataSeries->pointsVector();
-    std::sort(points.begin(), points.end(), [&](QPointF& a, QPointF& b){ return a.y() < b.y(); });
+    std::sort(points.begin(), points.end(), [&](QPointF& a, QPointF& b){ return a.y() <= b.y(); });
     m_pChart->axisY()->setRange(points.front().y(), points.back().y());
 }
 
